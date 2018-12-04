@@ -15,14 +15,19 @@
       border-radius: 10px;
       text-align: center;
       box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+      background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      )
     }
 
     .title-content {
       width: 100%;
-      margin: 80px 0 0 0;
+      height: 94%;
     }
 
     .title {
+      padding: 80px 0 0 0;
       font-size: 35px;
       font-weight: 500;
       letter-spacing: 2px;
@@ -50,12 +55,39 @@
       text-shadow: 1px 1px 1px #000;
     }
 
+    .address {
+      margin-top: 20px;
+      font-size: 20px;
+      font-style: italic;
+      font-family: 'Droid Serif', sans-serif;
+      text-shadow: 1px 1px 1px #000;
+      color: #ffeee6;
+    }
+
+    .date {
+      margin-top: 30px;
+      
+      .icon {
+        padding: 0 0 0 20px;
+        font-size: 20px;
+        color: #ffeee6;
+        font-family: 'Droid Serif', sans-serif;
+        text-shadow: 1px 1px 1px #000;
+        font-style: italic;
+        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/icon-calendar.svg) no-repeat 0 .2em;
+      }
+    }
+
     .masthead {
-      margin: 410px 0 0 0;
       color: white;
       font-family: Roboto, sans-serif;
     }
 
     .blog-card.winter-fever {
-      background: url(http://ekladata.com/Jf-cWbmxRZTXI1rTf8m-ReESEK0.jpg) no-repeat;
+        background: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.15),
+          rgba(0, 0, 0, 0.15)
+        ),
+        url(http://ekladata.com/Jf-cWbmxRZTXI1rTf8m-ReESEK0.jpg) no-repeat;
     }
