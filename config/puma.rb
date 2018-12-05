@@ -20,6 +20,8 @@ temp_dir = "#{app_dir}/tmp"
 log_dir = "#{app_dir}/log"
 socket_url ="unix://#{temp_dir}/sockets/puma.sock"
 
+directory app_dir
+
 bind socket_url
 
 stdout_redirect "#{log_dir}/puma.stdout.log", "#{log_dir}/puma.stderr.log", true
@@ -47,4 +49,3 @@ workers 2
 # Allow puma to be restarted by `rails restart` command.
 plugin :tmp_restart
 
-activate_control_app socket_url
